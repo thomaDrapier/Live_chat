@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px auto;
+    margin: 0;
+}
+
+.navbar{
+    grid-column: 1 / -1;
+    background-color: red;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container{
+    background-color: green;
+    grid-column: 1 / 2; /* L'élément s'étend de la première à la deuxième colonne */
+    grid-row: 2 / 3; 
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;   
+    margin-bottom: 20px;
+}
+
+.users{
+    background-color: blue;
+    grid-column: 2/2;
+    grid-row: 2 / 3;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;   
+    margin-bottom: 20px;
+
+}

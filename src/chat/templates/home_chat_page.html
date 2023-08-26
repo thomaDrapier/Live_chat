@@ -1,0 +1,28 @@
+<!-- {% load static %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/home_chat_page.css">
+    <title>home_chat_page</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="user_informations">{{username}}</div>
+        <div class="username"></div>
+    </div>
+    <div class="container">
+        <div class="chatbox"></div>
+        <div class="write_text">
+            <input class = "input_message" type="text">
+        </div>
+        <div class="send">
+            <button class="button_send">SEND</button>
+        </div>
+        </div>
+    </div>
+    <div class="active_users"></div>
+    <script src="{% static 'javascript/home_chat_page.js' %}"></script>
+</body>
+</html>

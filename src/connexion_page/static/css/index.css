@@ -1,0 +1,151 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0.31976540616246496) 100%);
+    margin:0px
+}
+
+.container{
+    width: 1300px;
+    height: 800px;
+    display: grid;
+    grid-auto-flow: column;
+    background-color: white;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: repeat(6, 100px);
+    border-radius: 50px;
+}
+
+.box{
+    background-color: white;
+}
+
+.image{
+    grid-row: span 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3cm;
+}
+.image .logo{
+    height:800px;
+    width: auto;
+    border-radius: 30px;
+}
+
+.slogan{
+    grid-row: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.slogan .title{
+    font-family: 'Unbonded', sans-serif;
+    font-size: 80px;
+
+}
+
+
+
+.inscription{
+    grid-row: span 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.inscription_title{
+   font-size: 40px;
+   margin-top: 0px;
+   font-family: 'Quicksand', sans-serif;
+}
+
+.choices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: solid 2px black;
+    height: 60px;
+    border-radius: 40px ;
+    margin: 10px;
+    width: 300px;
+    margin-bottom: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.google .image{
+    height: 40px;
+    width: auto;
+    padding: 10px
+}
+
+
+
+.creer_compte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border-radius: 40px ;
+    margin: 10px;
+    width: 200px;
+    margin-top: 0px;
+}
+
+.creer_compte .button_inscription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    margin-top: 0px;
+    border-radius: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+.connexion{
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    border-radius: 40px ;
+    
+
+}
+
+.connexion .connect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    margin: 10px;
+    width: 200px;
+}
+
+.connexion .connect .button_connection{
+    font-size: 20px;
+    height: 60px;
+    border-radius: 40px ;
+    width: 200px;
+    font-family: 'Quicksand', sans-serif;
+}
+

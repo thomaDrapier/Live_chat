@@ -1,0 +1,67 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px auto;
+}
+
+.navbar{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: red;
+    margin: 10px;
+}
+
+.container{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: yellow;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: 8fr 1fr;
+    padding: 5px;
+}
+
+.chatbox, .send, .write_text{
+    margin: 5px;
+}
+
+.chatbox{
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: aqua;
+}
+.write_text{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: whitesmoke;
+}
+
+.write_text input {
+    width: 100%;
+    height: 100%;
+}
+.send{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: brown;
+
+}
+
+.send button {
+    width: 100%;
+    height: 100%;
+}
+.active_users{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: green;
+    margin: 10px;
+}

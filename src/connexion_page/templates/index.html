@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion page</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <!-- <link rel="stylesheet" href="../static/css/index.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Quicksand:wght@300;400;600&family=Roboto+Slab:wght@500&family=Ruwudu:wght@500&family=Unbounded:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box image">
+            <img src="{% static 'image/logo.jpg' %}" class = "logo" alt="">
+        </div>
+
+        <div class="box slogan"><p class="title">Online Chat</p></div>
+
+        <div class="box inscription">
+            <p class ="inscription_title">Inscrivez Vous.</p>
+            <div class="choices">
+                <div class="google">
+                    <img src="{% static 'image/google_icone.png' %}" class="image" alt="">
+                    <p>S'inscrire avec google</p>
+                </div>
+                <div class="separatif"><p>ou</p></div>
+                <div class="creer_compte">
+                    <button class="button_inscription">Créer un compte</button>
+                </div>
+            </div>
+        </div>
+        <div class="box connexion">
+            <p class="title">Vous avez déjà un compte ?</p>
+            <div class="connect">
+                <button class="button_connection">Se connecter</button>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'javascript/index.js' %}"></script>
+</body>
+</html>

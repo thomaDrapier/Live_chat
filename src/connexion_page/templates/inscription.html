@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/inscription.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <input class="input first_name" type="text" name = "first_name" autocomplete="new-password">
+            <div class="text first_name_text">First name</div>
+            <div class="incorrect_empty incorrect_empty_first_name">This field is incorrect or empty</div>
+        </div>
+        <div class="form">
+            <input class="input name" type="text" name = "name" autocomplete="new-password">
+            <div class="text name_text">Name</div>
+            <div class="incorrect_empty incorrect_empty_name">This field is incorrect or empty</div>
+        </div>
+        <div class="form">
+            <input class="input email" type="text" name = "email" autocomplete="new-password">
+            <div class="text email_text">Email</div>
+            <div class="incorrect_empty incorrect_empty_email">This field is incorrect or empty</div>
+        </div>
+        <div class="form">
+            <input class="input username" type="text" name = "username" autocomplete="new-password">
+            <div class="text username_text">Username</div>
+            <div class="incorrect_empty incorrect_empty_username">This field is incorrect or empty</div>
+        </div>
+        <div class="form">
+            <input class="input password" type="password" name = "password" autocomplete="new-password">
+            <div class="text password_text">Password</div>
+            <div class="incorrect_empty incorrect_empty_password">This field is incorrect or empty</div>
+        </div>
+        <div class="form">
+            <input class="input password_confirmation" type="password" name = "password_confirmation" autocomplete="new-password">
+            <div class="text password_confirmation_text">Password confirmation</div>
+            <div class="incorrect_empty incorrect_empty_password_confirmation">This field is incorrect or empty</div>
+        </div>
+        <input class = "submit" type="submit" value="Submit">
+    </div>
+    <!-- <script type="module" src="../static/javascript/inscription.js"></script> -->
+    <script type="module" src="{% static 'javascript/inscription.js' %}"></script>
+</body>
+</html>

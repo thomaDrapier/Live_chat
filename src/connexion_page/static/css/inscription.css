@@ -1,0 +1,107 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background: #AED6F1 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 600px;
+    height: 700px;
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: whitesmoke;
+    background-blend-mode: soft-light;
+    box-shadow: -9px -9px 7px 0px rgba(255, 255, 255, 0.25), 9px 9px 7px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.form{
+    border: none;
+    background-color: transparent;
+    letter-spacing: 2px;
+    width: auto;
+    height: 50px;
+    font-family: 'roboto', sans-serif;
+    outline: none;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    border: none;
+    z-index: 0;
+}
+
+.input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 20px;
+    opacity: 0.5;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    z-index: 2;
+    border-radius: 5px;
+    transition: border 0.05s linear;
+    position: relative;
+    font-size: 2vh;
+}
+
+.text{
+    position: absolute;
+    display: inline-block;
+    width: auto;
+    top: 50%;
+    transform:translate(0, -50%);
+    left: 20px;
+    color: rgb(0, 0, 0);
+    pointer-events: none;
+    z-index: 1;
+    transition : left 0.2s linear, top 0.2s linear
+}
+
+.incorrect_empty{
+    margin-top: 10px;
+    font-family: 'roboto', sans-serif;
+    color: red;
+    display: none;
+}
+/* -------------------------------------JS-------------------------------- */
+
+.border_effect{
+    border : 4px solid rgb(39, 96, 255);
+}
+
+.show{
+    display: inline;
+}
+
+.incorrect_border_effect{
+    border: 4px solid red
+}
+
+.focuse_text{
+    left: 15px;
+    top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;  
+    background-color: whitesmoke;
+    font-size: 1.4vh;
+    z-index: 3;
+    opacity: 1;
+}
+
+.border_good{
+    border : 4px solid rgb(0, 172, 23);
+}
+
+.border_not_good{
+    border : 4px solid red;
+}

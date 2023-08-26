@@ -1,0 +1,177 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+    background: radial-gradient(86.59% 45.91% at 50.00% 50.00%, #13696F 0%, #005358 100%);
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    /* background-color: #222; */
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius: 5px; */
+    /* box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); */
+
+    border-radius: 5px;
+    background: linear-gradient(180deg, #004A61 0%, #003445 98.44%);
+    box-shadow: -25px 42px 31px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* --------------------------------------USERNAME--------------------------------------------- */
+
+.user_box_username{
+    position: relative;
+    width : 300px;
+    height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.username{
+    position: absolute;
+    width : 300px;
+    height: 50px;
+    border: none;
+    border-bottom: solid 2px rgb(136, 136, 136);
+    outline: none; 
+    left: 0;
+    background-color: transparent;
+    color: whitesmoke
+}
+
+.username_label{
+    color: white;
+    position: absolute;
+    left: 0px;
+    top:15px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: top 0.3s linear, font-size 0.3s linear;
+}
+
+
+.username_label.focused{
+    font-size: 0.8rem;
+    top:-5px;
+    transition: font-size 0.3s linear, top 0.3s linear;
+}
+
+/* --------------------------------------PASSWORD--------------------------------------------- */
+
+.user_box_password{
+    position: relative;
+    width : 300px;
+    height: 50px;
+    margin-bottom: 100px;
+}
+
+.password{
+    position: absolute;
+    width : 300px;
+    height: 50px;
+    border: none;
+    border-bottom: solid 2px rgb(136, 136, 136);
+    outline: none; 
+    left: 0;
+    background-color: transparent;
+    color: whitesmoke
+}
+
+.password_label{
+    color: white;
+    position: absolute;
+    left: 0px;
+    top:15px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    transition: top 0.3s linear, font-size 0.3s linear;
+}
+
+
+.password_label.focused{
+    font-size: 0.8rem;
+    top:-5px;
+    transition: font-size 0.3s linear, top 0.3s linear;
+}
+
+/* --------------------------------------SUBMIT--------------------------------------------- */
+
+
+.submit{
+    width: 130px;
+    height: 50px;
+    padding: 0;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: transparent;
+    color: white;
+    z-index: 4;
+}
+
+.submit::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: conic-gradient(from 180deg at 50.02% 44.66%, #15C7FF 0deg, rgba(217, 217, 217, 0.00) 78.75deg, rgba(217, 217, 217, 0.00) 360deg);
+    opacity: 0.5;
+    animation: rotate 2s linear infinite; 
+}
+
+.submit::after{
+    position: absolute;
+    content:"";
+    background: #5f5f5f;
+    opacity: 1;
+    width: 120px;
+    height: 40px;
+}
+
+.submit p {
+    z-index: 3;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.05rem;
+
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateZ(360deg);
+    }
+    to{
+        transform: rotateZ(0deg)
+    }
+}
+
+.submit.hover{
+    box-shadow: 5px 5px 15px 5px #000000;
+    transition: box-shadow 0.5s linear, width 0.5s linear, height 0.5s linear;
+}
+
+/* --------------------------------------INCORRECT--------------------------------------------- */
+
+.incorrect{
+    color: red;
+    font-family: 'roboto', sans-serif;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.incorrect.show{
+    opacity: 1;
+}
+
